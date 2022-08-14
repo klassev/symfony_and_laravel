@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/test/{id?}', [\App\Http\Controllers\TestController::class, 'show']);
+Route::get('/auth/', [\App\Http\Controllers\TestAuthController::class, 'testAuth'])
+    ->middleware('test.auth');

@@ -10,7 +10,7 @@ class TestController extends Controller
     {
         $request->request->add([
             'requestVar' => 'requestVal',
-            'routVar' => $id
+            'routVar' => $id,
         ]);
 
         dd($request->request->all());
